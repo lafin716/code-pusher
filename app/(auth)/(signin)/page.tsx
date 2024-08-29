@@ -5,8 +5,9 @@ import { buttonVariants } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 
 export const metadata: Metadata = {
-  title: 'Authentication',
-  description: 'Authentication forms built using the components.'
+  title: 'Code Pusher - 코드뿌셔',
+  description:
+    '내 프로젝트에 기능이 필요한가요? 코드뿌셔들에게 도움을 요청해보세요!'
 };
 
 export default function AuthenticationPage() {
@@ -21,7 +22,7 @@ export default function AuthenticationPage() {
       >
         Login
       </Link>
-      <div className="relative hidden h-full flex-col bg-muted p-10 text-white lg:flex dark:border-r">
+      <div className="relative hidden h-full flex-col bg-muted p-10 text-white dark:border-r lg:flex">
         <div className="absolute inset-0 bg-zinc-900" />
         <div className="relative z-20 flex items-center text-lg font-medium">
           <svg
@@ -36,16 +37,14 @@ export default function AuthenticationPage() {
           >
             <path d="M15 6v12a3 3 0 1 0 3-3H6a3 3 0 1 0 3 3V6a3 3 0 1 0-3 3h12a3 3 0 1 0-3-3" />
           </svg>
-          Logo
+          코드뿌셔
         </div>
         <div className="relative z-20 mt-auto">
           <blockquote className="space-y-2">
             <p className="text-lg">
-              &ldquo;This library has saved me countless hours of work and
-              helped me deliver stunning designs to my clients faster than ever
-              before.&rdquo;
+              &ldquo;역시 고기는 구워주는 고기가 제일 맛있다.&rdquo;
             </p>
-            <footer className="text-sm">Sofia Davis</footer>
+            <footer className="text-sm">재욱</footer>
           </blockquote>
         </div>
       </div>
@@ -53,30 +52,14 @@ export default function AuthenticationPage() {
         <div className="mx-auto flex w-full flex-col justify-center space-y-6 sm:w-[350px]">
           <div className="flex flex-col space-y-2 text-center">
             <h1 className="text-2xl font-semibold tracking-tight">
-              Create an account
+              새로 가입하기
             </h1>
             <p className="text-sm text-muted-foreground">
-              Enter your email below to create your account
+              이메일을 입력하기만하면 새로 가입이 완료됩니다
             </p>
           </div>
           <UserAuthForm />
-          <p className="px-8 text-center text-sm text-muted-foreground">
-            By clicking continue, you agree to our{' '}
-            <Link
-              href="/terms"
-              className="underline underline-offset-4 hover:text-primary"
-            >
-              Terms of Service
-            </Link>{' '}
-            and{' '}
-            <Link
-              href="/privacy"
-              className="underline underline-offset-4 hover:text-primary"
-            >
-              Privacy Policy
-            </Link>
-            .
-          </p>
+          <p className="px-8 text-center text-sm text-muted-foreground"></p>
         </div>
       </div>
     </div>

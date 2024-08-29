@@ -19,7 +19,7 @@ export default function GithubSignInButton() {
       }
     >
       <Icons.gitHub className="mr-2 h-4 w-4" />
-      Continue with Github
+      Github로 로그인
     </Button>
   );
 }

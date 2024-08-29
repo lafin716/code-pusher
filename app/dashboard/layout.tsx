@@ -4,8 +4,9 @@ import { ScrollArea } from '@/components/ui/scroll-area';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Next Shadcn Dashboard Starter',
-  description: 'Basic dashboard with Next.js and Shadcn'
+  title: 'Code Pusher - 코드뿌셔',
+  description:
+    '내 프로젝트에 기능이 필요한가요? 코드뿌셔들에게 도움을 요청해보세요!'
 };
 
 export default function DashboardLayout({

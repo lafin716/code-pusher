@@ -10,8 +10,9 @@ import { auth } from '@/auth';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Next Shadcn',
-  description: 'Basic dashboard with Next.js and Shadcn'
+  title: 'Code Pusher - 코드뿌셔',
+  description:
+    '내 프로젝트에 기능이 필요한가요? 코드뿌셔들에게 도움을 요청해보세요!'
 };
 
 export default async function RootLayout({
