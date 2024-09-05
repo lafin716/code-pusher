@@ -30,3 +30,8 @@ export interface FooterItem {
 export type MainNavItem = NavItemWithOptionalChildren;
 
 export type SidebarNavItem = NavItemWithChildren;
+
+export interface Post {
+  id: string;
+  // Add other post properties here
+}
