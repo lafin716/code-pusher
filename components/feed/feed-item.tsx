@@ -13,7 +13,13 @@ import {
 import { Icon } from '@iconify/react';
 import { useState } from 'react';
 
-export function FeedItem() {
+export type FeedItemProps = {
+  nickname?: string;
+  title?: string;
+  content?: string;
+};
+
+export function FeedItem({ nickname, title, content }: FeedItemProps) {
   const [isLiked, setIsLiked] = useState(false);
 
   const handleLike = () => {
@@ -31,9 +37,9 @@ export function FeedItem() {
           <div className="flex items-center gap-2">
             <Avatar className="h-8 w-8">
               <AvatarImage src="https://github.com/shadcn.png" />
-              <AvatarFallback>CN</AvatarFallback>
+              <AvatarFallback>A</AvatarFallback>
             </Avatar>
-            <Label className="text-md">lafin</Label>
+            <Label className="text-md">{nickname}</Label>
           </div>
           <div className="flex items-center gap-1">
             <Icon
@@ -78,8 +84,8 @@ export function FeedItem() {
           </div>
         </CardTitle>
         <CardContent className="pt-3 text-sm">
-          <p className="text-lg font-bold">프로젝트 제목</p>
-          <p className="text-sm">프로젝트 설명</p>
+          <p className="text-lg font-bold">{title}</p>
+          <p className="text-sm">{content}</p>
         </CardContent>
       </CardHeader>
     </Card>
